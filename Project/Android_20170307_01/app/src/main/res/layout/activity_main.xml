@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.cookandroid.android_20170307_01.MainActivity">
+
+  <Button
+      android:id="@+id/buttonInView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+      android:text="@string/buttonText"/>
+
+  <TextView
+      android:id="@+id/textViewInView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="성별선택"/>
+
+  <RadioGroup
+      android:id="@+id/radioGroupInView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="female"/>
+
+    <RadioButton
+        android:id="@+id/male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="male"/>
+  </RadioGroup>
+</LinearLayout>
