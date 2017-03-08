@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bitacademy.exam_20170308.Ex03">
+
+  <EditText
+    android:id="@+id/ex03_InputNumber01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:ems="10"
+    android:inputType="text" />
+
+  <EditText
+    android:id="@+id/ex03_InputNumber02"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:ems="10"
+    android:inputType="text" />
+
+  <Button
+    android:id="@+id/ex03_Btn01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="@string/ex03_Btn01_text" />
+
+  <Button
+    android:id="@+id/ex03_Btn02"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="@string/ex03_Btn02_text" />
+
+  <Button
+    android:id="@+id/ex03_Btn03"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="@string/ex03_Btn03_text" />
+
+  <Button
+    android:id="@+id/ex03_Btn04"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="@string/ex03_Btn04_text" />
+
+  <Button
+    android:id="@+id/ex03_Btn05"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="@string/ex03_Btn05_text" />
+
+  <TextView
+    android:id="@+id/ex03_OutputText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text=""
+     />
+</LinearLayout>

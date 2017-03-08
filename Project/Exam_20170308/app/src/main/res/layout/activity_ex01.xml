@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bitacademy.exam_20170308.Ex01">
+
+  <Button
+    android:id="@+id/btn01"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="#555555"
+    android:text="@string/btn01_text" />
+
+  <Button
+    android:id="@+id/btn02"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="#888888"
+    android:text="@string/btn02_text" />
+
+  <Button
+    android:id="@+id/btn03"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="#AAAAAA"
+    android:text="@string/btn03_text" />
+
+  <Button
+    android:id="@+id/btn04"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="#CACACA"
+    android:text="@string/btn04_text" />
+
+</LinearLayout>

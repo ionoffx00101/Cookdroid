@@ -1,0 +1,22 @@
+<resources>
+  <string name="app_name">Exam_20170308</string>
+
+  <string name="btn01_text">네이트 ㄱ</string>
+  <string name="btn02_text">전화 ㄱ</string>
+  <string name="btn03_text">갤러리 ㄱ</string>
+  <string name="btn04_text">종료 ㄱ</string>
+
+  <string name="inputURL_text">http://m.daum.net</string>
+  <string name="ex02Btn01_text">나와라 글자</string>
+  <string name="ex02Btn02_text">입력한 곳으로 가시죠</string>
+  <string name="ex02RadioBtn01_text">젤리빈</string>
+  <string name="ex02RadioBtn02_text">ㅋㅋ</string>
+  <string name="ex02RadioBtn03_text">롤리팝</string>
+
+  <string name="ex03_Btn01_text">+</string>
+  <string name="ex03_Btn02_text">- </string>
+  <string name="ex03_Btn03_text">*</string>
+  <string name="ex03_Btn04_text">/</string>
+  <string name="ex03_Btn05_text">%</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  tools:context="com.bitacademy.exam_20170308.Ex02">
+
+  <EditText
+    android:id="@+id/inputURL"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:ems="10"
+    android:inputType="textUri"
+    android:text="@string/inputURL_text" />
+
+  <Button
+    android:id="@+id/ex02Btn01"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/ex02Btn01_text" />
+
+  <Button
+    android:id="@+id/ex02Btn02"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/ex02Btn02_text" />
+
+  <RadioGroup
+    android:id="@+id/ex02RadioBtnGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+      android:id="@+id/ex02RadioBtn01"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/ex02RadioBtn01_text"
+      android:checked="true"/>
+
+    <RadioButton
+      android:id="@+id/ex02RadioBtn02"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/ex02RadioBtn02_text" />
+
+    <RadioButton
+      android:id="@+id/ex02RadioBtn03"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="@string/ex02RadioBtn03_text" />
+  </RadioGroup>
+
+  <ImageView
+    android:id="@+id/imageView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:srcCompat="@drawable/jellybean" />
+
+</LinearLayout>
