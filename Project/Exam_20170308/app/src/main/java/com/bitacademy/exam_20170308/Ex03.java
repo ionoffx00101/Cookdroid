@@ -1,6 +1,7 @@
 package com.bitacademy.exam_20170308;
 
 import android.os.Bundle;
+import android.support.v4.media.MediaBrowserCompatUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -53,7 +54,10 @@ public class Ex03 extends AppCompatActivity {
         inputString2 = editText02.getText().toString();
 
         // 입력값 == null ,입력값.trim().length()==0
-        if (inputString1.equals("") || inputString2.equals("")) {
+        // editText02.getText()==null
+        // editText02.getText().toString().trim().length() == 0
+        // inputString2.trim().length() == 0
+        if (inputString1.equals("") || inputString2.equals("") || inputString1.trim().length() == 0 ||inputString2.trim().length() == 0) {
 
           Toast.makeText(Ex03.this, "계산 안할거임 ㅡㅡ", Toast.LENGTH_SHORT).show();
 

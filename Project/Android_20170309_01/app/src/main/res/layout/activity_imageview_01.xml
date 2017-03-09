@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.coffee.android_20170309_01.Imageview_01">
+
+  <CheckBox
+    android:id="@+id/checkBox"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:text="첫번째 그림을 보여주시죠" />
+
+  <ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="#555555"
+    app:srcCompat="@mipmap/ic_launcher" />
+
+  <ImageButton
+    android:id="@+id/imageButton"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="#888888"
+    app:srcCompat="@mipmap/ic_launcher_round" />
+
+  <ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="#AAAAAA"
+    android:scaleType="fitXY"
+    app:srcCompat="@mipmap/ic_launcher" />
+
+  <ImageView
+    android:id="@+id/imageView3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:background="#CCCCCC"
+    app:srcCompat="@mipmap/ic_launcher" />
+</LinearLayout>
