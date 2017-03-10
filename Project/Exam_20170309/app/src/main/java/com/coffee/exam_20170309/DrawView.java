@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.support.design.widget.FloatingActionButton;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
@@ -29,6 +30,19 @@ public class DrawView extends View {
     paint.setAntiAlias(true);
   }
 
+  // 1. Ex02로 paint객체롤 보내서 색을 바꿀 수 있게 해준다
+//public Paint getPainting(){
+// return paint;
+//}
+
+  // 2. 바꾸는 메소드
+//  public void changePenColor(){
+//    paint.setColor(Color.RED);
+//  }
+//public void clickBtnPenChange(View view){
+//  int a = view.getId();
+//  paint.setColor(Color.RED);
+//}
   @Override
   public boolean onTouchEvent(MotionEvent event) {
     if (event.getAction() == MotionEvent.ACTION_DOWN) {
@@ -40,23 +54,6 @@ public class DrawView extends View {
 
       pointList.add(point);
 
-                     /*
-            * 1.터치한  X좌표를 변수에 저장
-            *   터치한 X좌표는 event.getX()
-            *
-            * 2.터치한  y좌표를 변수에 저장
-            *   터치한 y좌표는 event.getY()
-            *
-            * 3.Point 객체 생성
-            *
-              4.3객체의 x속성에 1의 변수 저장
-
-              5.3객체의 y속성에 2의 변수 저장
-
-              6 3객체의 isDraw 속성에 false 저장.
-
-              7.3객체를 pointList에 추가
-              */
     } else if (event.getAction() == MotionEvent.ACTION_MOVE) {//화면에서 손을 이동할떄
 
 
@@ -67,29 +64,6 @@ public class DrawView extends View {
 
       pointList.add(point);
 
-      // invalidate();
-
-      /*
-            * 1.터치한  X좌표를 변수에 저장
-            *   터치한 X좌표는 event.getX()
-            *
-            * 2.터치한  y좌표를 변수에 저장
-            *   터치한 y좌표는 event.getY()
-            *
-            * 3.Point 객체 생성
-            *
-              4.3객체의 x속성에 1의 변수 저장
-
-              5.3객체의 y속성에 2의 변수 저장
-
-               6. 3객체의 isDraw 속성에 true 저장
-
-              6.3객체를 pointList에 추가
-
-              7. invalidate() 메서드를 실행
-                - invaidate() : 화면을 모두 지우고 아래의 onDraw() 메서드를 실행시키는 메서드
-
-            * */
     }
     invalidate();
 
@@ -119,20 +93,6 @@ public class DrawView extends View {
         }
       }
 
-
-            /*
-            * 1.pointList에서 i번째 객체를 꺼내서 변수 startPoint 에 저장
-            *
-            * 2. startPoint의 isDraw 속성이 true 이면
-                * 2.1pointList에서 i+1번째 객체를 꺼내서 변수 endPoint에 저장
-                * 2.3.startPoint의 x좌표를 변수 startX에 저장
-                * 2.4.startPont의 y좌표를 변수 startY에 저장
-                * 2.5.endPoint의 x좌표를 변수 endX에 저장
-                * 2.6.endPont의 y좌표를 변수 endY에 저장
-                *
-                * 2. 7.startX,startY 부터 endX,endY까지 선을 그림
-                * canvas.drawLine(startX,startY,endX,endY,paint);
-            * */
     }
 
 

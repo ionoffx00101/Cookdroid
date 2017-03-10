@@ -15,9 +15,10 @@
 
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
-    </activity><activity android:name=".Ex01" />
+    </activity>
+    <activity android:name=".Ex01" />
     <activity android:name=".Ex02" />
-    <activity android:name=".Ex03"></activity>
+    <activity android:name=".Ex03" />
   </application>
 
 </manifest>

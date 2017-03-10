@@ -9,6 +9,7 @@ public class Point {
   private int y;
   private boolean isDraw;
 
+
   public int getX() {
     return x;
   }
