@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
-  android:orientation="vertical"
   xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context="com.coffee.android_20170310_01.Ch06_Page05">
+  tools:context="com.coffee.android_20170313_01.Ch06_Page20_01">
 
-  <TextClock
-    android:id="@+id/tClock"
-    android:layout_width="match_parent"
-    android:layout_height="1dp"
-    android:gravity="center"
-    android:layout_weight="1"
-    android:clickable="true"/>
-
-
-  <Button
-    android:id="@+id/checkTime"
+  <AutoCompleteTextView
+    android:id="@+id/autoCompleteTextView"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="시간확인"/>
+    android:completionThreshold="2"
+    android:hint="O.o" />
+
+  <MultiAutoCompleteTextView
+    android:id="@+id/multiAutoCompleteTextView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="O.o , o.O" />
 
 </LinearLayout>

@@ -24,8 +24,8 @@ public class Ch06_Page05 extends AppCompatActivity {
     setContentView(R.layout.activity_ch06__page05);
 
     tClock = (TextClock) findViewById(R.id.tClock);
-    aClock =(AnalogClock)findViewById(R.id.aClock);
-    dClock = (DigitalClock)findViewById(R.id.dClock);
+//    aClock =(AnalogClock)findViewById(R.id.aClock);
+//    dClock = (DigitalClock)findViewById(R.id.dClock);
     checkTimeBtn = (Button) findViewById(R.id.checkTime);
 
     checkTimeBtn.setOnClickListener(new View.OnClickListener() {
