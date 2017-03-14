@@ -105,12 +105,19 @@ public class Ex01 extends AppCompatActivity {
 
         // textView 바꾸기
         // 그냥하면 오류 나서 + " " 붙여줬더니 되긴 한다 흠..
-        tvYear.setText(datePicker.getYear()+" ");
-        tvMonth.setText(datePicker.getMonth()+" ");
-        tvDay.setText(datePicker.getDayOfMonth()+" ");
-        tvHour.setText(timePicker.getHour()+" ");
-        tvMinute.setText(timePicker.getMinute()+" ");
+//        tvYear.setText(datePicker.getYear()+" ");
+//        tvMonth.setText(datePicker.getMonth()+" ");
+//        tvDay.setText(datePicker.getDayOfMonth()+" ");
+//        tvHour.setText(timePicker.getHour()+" ");
+//        tvMinute.setText(timePicker.getMinute()+" ");
 
+        // Integer.toString()
+        // 오류는 안 나지만 안드로이드 스튜디오가 굉장히 싫어한다.. 흠..
+        tvYear.setText(Integer.toString(datePicker.getYear()));
+        tvMonth.setText(Integer.toString(datePicker.getMonth()));
+        tvDay.setText(Integer.toString(datePicker.getDayOfMonth()));
+        tvHour.setText(Integer.toString(timePicker.getHour()));
+        tvMinute.setText(Integer.toString(timePicker.getMinute()));
 
         // 위젯들 초기화
         // 초시계 아예 멈추기

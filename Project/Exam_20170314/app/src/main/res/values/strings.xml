@@ -1,0 +1,13 @@
+<resources>
+  <string name="app_name">Exam_20170314</string>
+  <string-array name="menu_array">
+    <item>Ex01</item>
+    <item>Ex02</item>
+
+
+  </string-array>
+  <string name="title_activity_real">real</string>
+  <string name="title_home">Home</string>
+  <string name="title_dashboard">Dashboard</string>
+  <string name="title_notifications">Notifications</string>
+</resources>
