@@ -30,6 +30,9 @@ public class Ex01 extends AppCompatActivity implements GestureDetector.OnGesture
     // 터치 기능 뺏기
     detector = new GestureDetector(Ex01.this);
     viewFlipper.setFlipInterval(1000);
+
+    // detector.onTouchEvent(dispatchTouchEvent());
+
     // 버튼 기능 넣어주기
     btnStart.setOnClickListener(new View.OnClickListener() {
       @Override
