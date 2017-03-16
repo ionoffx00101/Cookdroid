@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:orientation="vertical"
+  android:padding="5sp"
+  tools:context="com.bitacademy.exam_20170316.Ex01">
+  <!-- 이전그림 이후 그림 두개의 버튼과
+  현재 그림 인덱스를 보여주는 텍스트 뷰
+   /전체 그림수를 보여주는 텍스트 뷰
+  MyPictureView를 보여주는 화면을 설계
+  하시오
+
+  교재 8장 31페이지 참조하되
+  교재 8장 31페이지에는
+  현재 그림 인덱스를 보여주는 텍스트 뷰 현재값 1
+   /전체 그림수를 보여주는 텍스트 뷰 가 없으므로
+   추가 할것
+  -->
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+      android:id="@+id/btnPrv"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="이전" />
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:orientation="horizontal">
+
+      <TextView
+        android:id="@+id/txtNaviNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+      <TextView
+        android:id="@+id/txtNavi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" / "
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+      <TextView
+        android:id="@+id/txtNaviAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+    </LinearLayout>
+
+
+    <Button
+      android:id="@+id/btnNext"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:text="다음" />
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+   <com.bitacademy.exam_20170316.MyPictureView
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:id="@+id/myPictureViewInlayout"/>
+
+  </LinearLayout>
+
+</LinearLayout>

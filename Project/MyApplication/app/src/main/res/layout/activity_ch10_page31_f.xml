@@ -28,4 +28,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="더하기" />
+  <Button
+    android:id="@+id/btnMulti"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="곱하기" />
 </LinearLayout>

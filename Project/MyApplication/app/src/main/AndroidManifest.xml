@@ -9,18 +9,16 @@
     android:roundIcon="@mipmap/ic_launcher_round"
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
-    <activity android:name=".Ch10_page06">
-
-    </activity>
+    <activity android:name=".Ch10_page06"/>
     <activity android:name=".SecondActivity" />
-    <activity android:name=".Ch10_page31_f">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
+    <activity android:name=".Ch10_page31_f" />
+    <activity android:name=".Ch10_page31_s" />
+    <activity android:name=".Ch10_page31_t" />
+    <activity android:name=".Ch11_page07">  <intent-filter>
+      <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
-    <activity android:name=".Ch10_page31_s"/>
+      <category android:name="android.intent.category.LAUNCHER" />
+    </intent-filter></activity>
   </application>
 
 </manifest>

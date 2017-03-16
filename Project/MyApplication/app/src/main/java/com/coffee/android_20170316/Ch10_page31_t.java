@@ -1,23 +1,23 @@
 package com.coffee.android_20170316;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Ch10_page31_s extends AppCompatActivity {
+public class Ch10_page31_t extends AppCompatActivity {
 
   Button btnReturn;
 
-  int result;
+  int multiValue;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_ch10_page31_s);
-    setTitle("Ch10_page31_s");
+    setTitle("Ch10_page31_t");
 
     btnReturn = (Button) findViewById(R.id.btnReturn);
 
@@ -28,10 +28,9 @@ public class Ch10_page31_s extends AppCompatActivity {
     // intent.getIntExtra(아까 받으라고 준 이름,그 이름의 데이터가 없을때 리턴할 값);
     int num1 = intent.getIntExtra("num1",0);
     int num2 = intent.getIntExtra("num2",0);
-    int num3 = intent.getIntExtra("num3",0); // 데이터가 없을 때 리턴하는 값 보려고 일부러 없는 이름을 찾아봄
 
-    result = num1+num2;
-    Toast.makeText(getApplicationContext(),num1+", "+num2+", "+num3,Toast.LENGTH_SHORT).show();
+    multiValue = num1*num2;
+    Toast.makeText(getApplicationContext(),num1+", "+num2,Toast.LENGTH_SHORT).show();
 
     // 돌아가기 버튼을 눌렀을때
     btnReturn.setOnClickListener(new View.OnClickListener() {
@@ -42,7 +41,7 @@ public class Ch10_page31_s extends AppCompatActivity {
         Intent outIntent = new Intent(getApplicationContext(),Ch10_page31_f.class);
 
         // 데이터를 넣는다
-        outIntent.putExtra("result",result);
+        outIntent.putExtra("multiResult",multiValue);
 
         // 보낸 값인지 인증하기? 약간 그런 의미던데
         setResult(RESULT_OK,outIntent);
