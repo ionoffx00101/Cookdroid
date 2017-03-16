@@ -17,6 +17,8 @@ import java.io.IOException;
 
 public class Ex01 extends AppCompatActivity {
 
+  // NoDapDiary에 추가된 내용이 있다.
+
   // 날짜, 일기쓰는곳,버튼, 두개 담긴 레이아웃
   DatePicker datePicker;
   LinearLayout writeLayout;
