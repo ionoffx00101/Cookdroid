@@ -52,7 +52,7 @@ public class Ex02 extends AppCompatActivity {
       @Override
       public void onClick(View v) {
 
-        // 데이터 보내기 전에 1등 고르기
+        // 데이터 보내기 전에 1등 찾기
         String firstImageName;//일등한 그림의 이름을 저장할 변수
         int firstImageId;//일등한 그림의 아이디를 저장할 변수
 

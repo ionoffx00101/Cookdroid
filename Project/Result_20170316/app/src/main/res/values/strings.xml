@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Result_20170316</string>
+    <string-array name="menu">
+        <item>Ex01</item>
+        <item>Ex02</item>
+    </string-array>
+</resources>

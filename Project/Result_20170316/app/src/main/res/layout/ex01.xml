@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bitacademy.exam_20170316.Ex01">
+    <!-- 이전 그림, 이후 그림 두개의 버튼과
+    현재 그림 인덱스를 보여주는 텍스트 뷰
+     /전체 그림수를 보여주는 텍스트 뷰
+    MyPictureView를 보여주는 화면을 설계
+    하시오
+
+    교재 8장 31페이지 참조하되
+    교재 8장 31페이지에는
+    현재 그림 인덱스를 보여주는 텍스트 뷰 현재값 1
+     /전체 그림수를 보여주는 텍스트 뷰 가 없으므로
+     추가 할것
+    -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="이전 그림"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/cIndex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="다음 그림" />
+    </LinearLayout>
+
+    <com.bitacademy.exam_20170316.MyPictureView
+        android:id="@+id/myPictureView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+       />
+</LinearLayout>
+

@@ -21,7 +21,6 @@ public class Ch11_page07 extends AppCompatActivity {
     setTitle("Ch11_page07");
 
 
-
     // 어댑터 설정
     ArrayAdapter<String> adapter = new ArrayAdapter<>(this, R.layout.fixed_simple_list_item,R.id.text1);
 

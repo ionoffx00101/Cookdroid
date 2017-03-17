@@ -143,6 +143,7 @@ public class Ex01 extends AppCompatActivity {
         //myPictureView.onDraw();
         myPictureView.invalidate();
         txtNaviNow.setText((curNum + 1) + "");
+        // (new Integer(curNum+1).toString());
       }
     });
 
