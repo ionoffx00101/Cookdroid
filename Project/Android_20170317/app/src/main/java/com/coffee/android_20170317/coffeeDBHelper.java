@@ -34,7 +34,6 @@ public class coffeeDBHelper extends SQLiteOpenHelper{
     db.execSQL("drop table if exists groupTBL");
 
     // onCreate 호출해서 테이블 다시 만들기
-    onCreate(db
-    );
+    onCreate(db);
   }
 }
